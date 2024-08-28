@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
+    <script type="module" src="./firebaseConfig.js" defer></script>
+
+    <title>Account Login</title>
+  </head>
+  <body>
+    <div class="container">
+      <!-- Sign Up---------- -->
+      <div class="signup-section">
+        <header>Sign Up</header>
+        <div class="social-buttons">
+          <button><i class="bx bxl-google"></i>Use Google</button>
+          <button><i class="bx bxl-apple"></i>Use Apple</button>
+        </div>
+        <div class="seperator">
+          <div class="line"></div>
+          <p>Or</p>
+          <div class="line"></div>
+        </div>
+
+        <form action="./home.html" method="get">
+          <input
+            type="text"
+            id="signUpName"
+            name="SignUpName"
+            placeholder="Full Name"
+            required
+          />
+          <input
+            type="email"
+            id="signUpEmail"
+            name="email"
+            placeholder="Enter Email"
+            required
+          />
+          <input
+            type="password"
+            id="signUpPassword"
+            name="password"
+            placeholder="Password"
+            required
+          />
+          <a href="#">Forget Password?</a>
+          <button type="submit" id="signUpButton" class="btn">
+            <a href="./home.html">Sign Up</a>
+          </button>
+        </form>
+      </div>
+
+      <!-- Login----------- -->
+      <div class="login-section">
+        <header>Login</header>
+        <div class="social-buttons">
+          <button><i class="bx bxl-google"></i>Use Google</button>
+          <button><i class="bx bxl-apple"></i>Use Apple</button>
+        </div>
+        <div class="seperator">
+          <div class="line"></div>
+          <p>Or</p>
+          <div class="line"></div>
+        </div>
+
+        <form action="./home.html" method="get">
+          <input
+            type="email"
+            id="loginEmail"
+            name="email"
+            placeholder="Enter Email"
+            required
+          />
+          <input
+            type="password"
+            id="loginPassword"
+            name="password"
+            placeholder="Password"
+            required
+          />
+          <a href="#">Forget Password?</a>
+          <button type="submit" id="loginButton" class="btn">
+            <a href="./home.html">Login</a>
+          </button>
+        </form>
+      </div>
+    </div>
+
+    <script src="./js/script.js"></script>
+
+    <script src="./js/form.js"></script>
+  </body>
+</html>
+ 

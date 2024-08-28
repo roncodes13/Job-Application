@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/home.css" />
+    <link rel="stylesheet" href="./css/form.css" />
+    <script type="module" src="./firebaseConfig.js" defer></script>
+
+    <title>Job Application</title>
+  </head>
+
+  <body>
+    <div class="sidebar">
+      <a href="#">Works</a>
+
+      <div class="side-nav">
+        <div class="item active">
+          <i class="bx bx-search-alt"></i>
+          <a href="#">Home</a>
+        </div>
+        <div class="item">
+          <i class="bx bx-message-square-dots"></i>
+          <a href="#">Notifications</a>
+        </div>
+        <div class="item">
+          <i class="bx bx-briefcase"></i>
+          <a href="#">My Apps</a>
+        </div>
+        <div class="item">
+          <i class="bx bx-bookmark-minus"></i>
+          <a href="#">Saved Jobs</a>
+        </div>
+        <div class="item">
+          <i class="bx bx-cog"></i>
+          <a href="#">Settings</a>
+        </div>
+      </div>
+
+      <div class="side-profile">
+        <div class="info">
+          <img src="./Profile.jpg" />
+          <a href="#">Mouqueer Anwar</a>
+          <p>Web Developer</p>
+        </div>
+        <div class="skills">
+          <h5>Skills and Expertise</h5>
+          <div class="skill-tags">
+            <div class="item">
+              <p>MERN Stack</p>
+            </div>
+            <div class="item">
+              <p>JavaScript ES6</p>
+            </div>
+            <div class="item">
+              <p>HTML5, CSS3,</p>
+            </div>
+            <div class="item">
+              <p>Tailwind CSS</p>
+            </div>
+            <div class="item">
+              <p>reactJS</p>
+            </div>
+            <div class="item">
+              <p>nodeJS</p>
+            </div>
+            <div class="item">
+              <p>Git, GitHub</p>
+            </div>
+          </div>
+        </div>
+        <button>View Profile</button>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="nav">
+        <button id="menuToggle"><i class="bx bx-menu"></i></button>
+        <div class="search">
+          <i class="bx bx-search"></i>
+          <input type="text" placeholder="Search for jobs or companies" />
+        </div>
+        <div class="city">
+          <i class="bx bxs-location-plus"></i>
+          <input type="text" placeholder="Enter city, state, or region" />
+        </div>
+        <button>Search</button>
+        <i class="bx bxs-bulb"></i>
+        <div class="user-info">
+          <img src="./Profile.jpg" />
+          <div>
+            <a href="#">Mouqueer<i class="bx bx-chevron-down"></i></a>
+            <p>roncodes.com</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Form------------------------------------------------------------------ -->
+      <div class="main">
+        <div class="container">
+          <div class="apply_box">
+            <h1>
+              <a href="#first_name"
+                >Job Application <span class="title_small"></span
+              ></a>
+            </h1>
+            <form
+              action="https://formsubmit.co/e5cc5f7becc8fe1ead61e9e9f5afc74a"
+              class="form"
+              method="POST"
+            >
+              <div class="form_container">
+                <div class="form_control">
+                  <label for="first_name">First name</label>
+                  <input
+                    id="first_name"
+                    name="first_name"
+                    placeholder="Enter your first name"
+                    autocomplete="off"
+                    required
+                  />
+                  <input
+                    type="hidden"
+                    name="_next"
+                    value="/freedom4/login2.html"
+                  />
+                </div>
+                <div class="form_control">
+                  <label for="last_name">Last name</label>
+                  <input
+                    id="last_name"
+                    name="last_name"
+                    placeholder="Enter your Last name"
+                    autocomplete="off"
+                    required
+                  />
+                </div>
+                <div class="form_control">
+                  <label for="email">Your Email</label>
+                  <input
+                    type="email"
+                    id="email"
+                    name="email"
+                    placeholder="Enter your Email.."
+                    autocomplete="off"
+                    required
+                  />
+                </div>
+                <div class="form_control">
+                  <label for="phone">Your Phone No.</label>
+                  <input
+                    type="number"
+                    id="phone"
+                    name="phone"
+                    placeholder="Enter your Mobile No."
+                    autocomplete="off"
+                    required
+                  />
+                </div>
+                <div class="form_control">
+                  <label for="job_rol">Your Job Rol</label>
+                  <select name="job_rol" id="job_rol">
+                    <option value="frontend">Front-end developer</option>
+                    <option value="backend">Back-end developer</option>
+                    <option value="full_stack">Full Stack developer</option>
+                    <option value="ui_ux">UI - UX developer</option>
+                  </select>
+                </div>
+                <div class="form_control">
+                  <label for="link">Your Portfolio link</label>
+                  <input
+                    type="link"
+                    id="link"
+                    name="link"
+                    placeholder="Enter your Portfolio link.."
+                    required
+                  />
+                </div>
+                <div class="textarea_control">
+                  <label for="address">Your Address</label>
+                  <textarea
+                    type="text"
+                    id="address"
+                    name="address"
+                    placeholder="Enter your Address.."
+                    autocomplete="off"
+                    rows="4"
+                    cols="50"
+                  ></textarea>
+                </div>
+                <div class="form_control">
+                  <label for="city">Your City</label>
+                  <input
+                    type="text"
+                    id="city"
+                    name="city"
+                    placeholder="Enter your City (Town).."
+                    autocomplete="off"
+                    required
+                  />
+                </div>
+                <div class="form_control">
+                  <label for="pin">Pin Code</label>
+                  <input
+                    type="number"
+                    id="pin"
+                    name="pin"
+                    placeholder="Enter your Pin Code.."
+                    value="493662"
+                    autocomplete="off"
+                    readonly
+                    required
+                  />
+                </div>
+                <div class="form_control">
+                  <label for="date">Date</label>
+                  <input
+                    type="date"
+                    id="date"
+                    name="date"
+                    value="2022-11-10"
+                    required
+                  />
+                </div>
+                <div class="form_control">
+                  <label for="files">Upload your C.V.</label>
+                  <input
+                    id="files"
+                    type="file"
+                    name="file"
+                    multiple="multiple"
+                    accept="image/jpeg, image/png, image/jpg, image/svg"
+                  />
+                  <output id="result" />
+                </div>
+              </div>
+              <div class="button_container">
+                <button type="submit">Apply Now</button>
+              </div>
+            </form>
+          </div>
+        </div>
+
+        <!-- Form End -->
+        <div class="filters">
+          <div class="header">
+            <h3>Job Filter</h3>
+            <a href="#">Clear all</a>
+          </div>
+          <div class="item">
+            <div class="title">
+              <h4>Time</h4>
+              <a href="#">Clear</a>
+            </div>
+            <div class="checkbox">
+              <div>
+                <input type="checkbox" name="today" />
+                <label for="today">Just Now</label>
+              </div>
+              <p>50 Jobs</p>
+            </div>
+            <div class="checkbox">
+              <div>
+                <input type="checkbox" name="week" />
+                <label for="week">Weekly</label>
+              </div>
+              <p>150 Jobs</p>
+            </div>
+            <div class="checkbox">
+              <div>
+                <input type="checkbox" name="month" />
+                <label for="month">Monthly</label>
+              </div>
+              <p>200 Jobs</p>
+            </div>
+          </div>
+          <div class="item">
+            <div class="title">
+              <h4>Experience</h4>
+              <a href="#">Clear</a>
+            </div>
+            <div class="checkbox">
+              <div>
+                <input type="checkbox" name="trainer" />
+                <label for="trainer">Entry</label>
+              </div>
+              <p>50 Jobs</p>
+            </div>
+            <div class="checkbox">
+              <div>
+                <input type="checkbox" name="junior" />
+                <label for="junior">Junior</label>
+              </div>
+              <p>100 Jobs</p>
+            </div>
+            <div class="checkbox">
+              <div>
+                <input type="checkbox" name="middle" />
+                <label for="middle">Middle</label>
+              </div>
+              <p>100 Jobs</p>
+            </div>
+            <div class="checkbox">
+              <div>
+                <input type="checkbox" name="senior" />
+                <label for="senior">Senior</label>
+              </div>
+              <p>50 Jobs</p>
+            </div>
+          </div>
+          <div class="item">
+            <div class="title">
+              <h4>Job Type</h4>
+              <a href="#">Clear</a>
+            </div>
+            <div class="checkbox">
+              <div>
+                <input type="checkbox" name="full" />
+                <label for="full">Full Time</label>
+              </div>
+              <p>100 Jobs</p>
+            </div>
+            <div class="checkbox">
+              <div>
+                <input type="checkbox" name="part" />
+                <label for="part">Part Time</label>
+              </div>
+              <p>50 Jobs</p>
+            </div>
+            <div class="checkbox">
+              <div>
+                <input type="checkbox" name="freelance" />
+                <label for="freelance">Contract</label>
+              </div>
+              <p>50 Jobs</p>
+            </div>
+          </div>
+          <div class="item">
+            <div class="title">
+              <h4>Job Location</h4>
+              <a href="#">Clear</a>
+            </div>
+            <div class="checkbox">
+              <div>
+                <input type="checkbox" name="site" />
+                <label for="site">On Site</label>
+              </div>
+              <p>100 Jobs</p>
+            </div>
+            <div class="location">
+              <i class="bx bxs-location-plus"></i>
+              <input type="text" placeholder="Search location" />
+            </div>
+            <div class="checkbox">
+              <div>
+                <input type="checkbox" name="remote" />
+                <label for="remote">Remote</label>
+              </div>
+              <p>50 Jobs</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Form End -->
+    </div>
+    <script src="./js/home.js"></script>
+  </body>
+</html>
